@@ -13,6 +13,11 @@ public class MoreCollections {
 
 		Collections.addAll(people, "John", "Dave", "Jane");
 
+		
+		
+		System.out.println("The ArrayList is:\n" + people );
+		System.out.println("");
+		
 		if (people.contains("John")) {
 			System.out.println("The ArrayList contains 'John'");
 		} else {
@@ -26,6 +31,18 @@ public class MoreCollections {
 			System.out.println("The ArrayList still has data");
 		} // end else
 
+		System.out.println("\nEmptying ArrayList");
+		people.clear();
+		
+		// Begin If Else
+		if (people.isEmpty()) {
+			System.out.println("The ArrayList is Empty");
+		} else {
+			System.out.println("The ArrayList still has data");
+		} // end else
+
+		
+		System.out.println("-------------------");
 		System.out.println("");
 		System.out.println("Creating LinkedList");
 
@@ -71,10 +88,6 @@ public class MoreCollections {
 		System.out.println("\t" + list.poll());
 		System.out.println("\t" + list.poll());
 		System.out.println("\t" + list.poll());
-
-		System.out.println("Pop List");
-		
-		System.out.println(list.pop(3));
 		
 		// Clear the LinkedList
 		System.out.println("\nClearing LinkedList");
